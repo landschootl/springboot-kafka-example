@@ -29,7 +29,7 @@ public class Producer {
     @Value("${cloudkarafka.topic}")
     private String topic;
 
-    Producer(KafkaTemplate<String, String> kafkaTemplate) {
+    Producer(KafkaTemplate kafkaTemplate) {
         this.kafkaTemplate = kafkaTemplate;
     }
 
